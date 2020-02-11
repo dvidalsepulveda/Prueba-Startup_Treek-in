@@ -1,4 +1,4 @@
-.nav__contenedor{
+.nav__contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,11 +6,15 @@
 }
 
 .nav__navbar {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  
   background-color: $clr-claros-1;
   overflow: hidden;
   font-family: $fnt-princi;
+}
+
+.nav__sepa {
+  margin-top: 10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -61,5 +65,11 @@
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav__navbar {
+    width: 70%;
   }
 }

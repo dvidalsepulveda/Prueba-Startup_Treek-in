@@ -16,3 +16,12 @@
         padding: 20px;
     }
 }
+
+@media (min-width: 576px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    
+}

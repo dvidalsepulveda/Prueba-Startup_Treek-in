@@ -2,7 +2,6 @@
   display: none;
 }
 
-
 .precios {
   .precios__caja {
     .card {
@@ -13,21 +12,48 @@
         color: $clr-claros-1;
         background-color: $clr-princ-1;
       }
+      .precios__boton:hover {
+        background-color: $clr-princ-2;
+      }
+      .precios__boton:focus {
+        background-color: $clr-oscur-3;
+      }
     }
   }
 }
 
 @media (min-width: 576px) {
-    .nav__botones {
-        display: flex;
-      }
-      
-      .nav__botones-base {
-        width: 100px;
-        height: 30px;
-        margin: 10px;
-        color: $clr-claros-1;
-        background-color: $clr-princ-1;
-        display: inline;
-      }
+  .nav__botones {
+    display: flex;
+    font-family: $fnt-princi;
+  }
+
+  .nav__botones-base {
+    width:100px;
+    height: 30px;
+    margin: 10px;
+    font-family: $fnt-princi;
+    color: $clr-claros-1;
+    background-color: $clr-princ-1;
+  }
+
+  .nav__botones-base:hover {
+    background-color: $clr-princ-2;
+  }
+
+  .nav__botones-base:focus {
+    background-color: $clr-oscur-3;
+  }
+
+  .iniciar{
+    font-family: $fnt-princi;
+    color: $clr-negros-1;
+    background-color: $clr-claros-1;
+  }
+  .iniciar:hover {
+    background-color: $clr-claros-2;
+  }
+  .iniciar:focus {
+    background-color: $clr-oscur-3;
+  }
 }
