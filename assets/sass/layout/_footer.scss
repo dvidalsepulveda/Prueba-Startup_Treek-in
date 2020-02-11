@@ -1,0 +1,19 @@
+.footer{
+    color: $clr-claros-1;
+    background-color: $clr-negros-1;
+    text-align: center;
+    font-family: $fnt-princi;
+    font-size: $x-small;
+    
+    // display: flex;
+    ul{
+        padding-top: 20px;
+        li{
+            display:inline;
+            padding: 10px;
+        }
+    }
+    p{
+        padding: 20px;
+    }
+}

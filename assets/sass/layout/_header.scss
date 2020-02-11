@@ -1,0 +1,35 @@
+.heroSection {
+  background-image: url(../img/bg-hero.svg);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position-x: -430px;
+  background-position-y: 200px;
+  height: 700px;
+  color: white;
+  color: $clr-negros-1;
+  font-family: $fnt-princi;
+
+  .heroSection__elements {
+    width: 270px;
+    margin: 0 auto;
+    padding-top: 2rem;
+
+    .heroSection__titulo {
+      h1 {
+        padding: 1rem 0;
+        
+      }
+    }
+
+    .heroSection__texto{
+        line-height: 2rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+    .heroSection {
+        background-position: center;
+        background-size: cover;
+    }
+  }

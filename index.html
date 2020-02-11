@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Document</title>
-</head>
-<body>
-    
-    <header></header>
-    <main></main>
-    <section></section>
-    <section></section>
-    <footer></footer>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Fonts Open Sans + Raleway -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Startup Treek-in</title>
+  </head>
+  <body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <nav class="nav__navbar" id="navbar">
+      <a href="#"><img src="assets/img/Logo.svg" alt=""/></a>
+      <a href="#">Acerca de</a>
+      <a href="#">Caracteristicas</a>
+      <a href="#">Precios</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+    </nav>
+
+    <header>
+      <div class="heroSection">
+        <div class="heroSection__elements">
+          <div class="heroSection__titulo">
+            <h1>Haz Trekking sin parar</h1>
+          </div>
+          <div class="heroSection__texto">
+            <p>
+              Con Trekk-in te despreocuparás de la estimación de tus viajes, ya
+              que con unos simples pasos podrás definir la mejor ruta a tomar
+              con tus compañeros de expedición.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="caracteristicas">
+      <h2>Caracteristicas</h2>
+      <img src="assets/img/bar-graph.svg" alt="" />
+      <h3>Estadisticas de tu progreso</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum similique
+        autem ex beatae laboriosam inventore sint saepe dolorum minus quos
+        deleniti, nihil reprehenderit enim id nulla dolor nemo magni architecto?
+      </p>
+    </main>
+
+    <section class="precios">
+      <h2>Precios</h2>
+      <div class="contenedor precios__caja row">
+        <div class="col-sm-12 col-md-6 card"></div>
+        <div class="col-sm-12 col-md-6 card"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul>
+        <li>Legal</li>
+        <li><span></span>Cookies</li>
+        <li><span></span>Sobre anuncios</li>
+      </ul>
+      <p>2018 Trekk-in SPA.</p>
+    </footer>
+  </body>
+  <script src="assets/js/script.js"></script>
 </html>

@@ -1,0 +1,59 @@
+.caracteristicas {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+
+  h2 {
+    text-align: center;
+    color: $clr-negros-1;
+    font-family: $fnt-princi;
+    padding: 1rem;
+  }
+  img {
+    width: 280px;
+    height: auto;
+    padding: 1rem;
+  }
+  h3{
+    text-align: center;
+    color: $clr-negros-1;
+    font-family: $fnt-princi;
+    padding: 1rem;
+  }
+  p{
+    width: 270px;
+    line-height: 2rem;
+    color: $clr-negros-1;
+    font-family: $fnt-princi;
+    padding: 1rem;
+  }
+}
+
+.precios {
+  margin: 0 auto;
+  background-image: url(../img/bg-price.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  h2 {
+    text-align: center;
+    color: $clr-claros-1;
+    font-family: $fnt-princi;
+    padding: 1rem;
+  }
+
+  .precios__caja {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      width: 500px;
+      height: 200px;
+      margin: 1rem auto;
+      background-color: white;
+    }
+  }
+}
