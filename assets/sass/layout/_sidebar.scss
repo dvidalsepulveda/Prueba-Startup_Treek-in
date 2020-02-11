@@ -1,0 +1,63 @@
+.precios {
+  margin: 0 auto;
+  padding-top: 250px;
+  background-image: url(../img/bg-price.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  h2 {
+    text-align: center;
+    color: $clr-claros-1;
+    font-family: $fnt-princi;
+    font-size: $xxx-large;
+    font-weight: $bold;
+    padding: 1rem;
+  }
+
+  .precios__caja {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      width: 400px;
+      margin: 1rem auto;
+      background-color: white;
+      color: $clr-negros-1;
+      font-family: $fnt-princi;
+      padding: 1.5rem;
+      h3 {
+        font-size: $large;
+        padding: 20px 0;
+      }
+      p {
+        font-size: $xx-large;
+        font-weight: $bold;
+      }
+      hr {
+        background-color: $clr-oscur-2;
+        height: 2px;
+        border-radius: 5px;
+        width: 90%;
+        margin: 30px auto;
+      }
+      ul {
+        margin-left: 0;
+        padding-left: 0;
+      }
+      li {
+        margin-left: 2rem;
+        padding: 5px 0;
+      }
+      .precios__oculto {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 576px) {
+  .precios{
+    padding-top: 170px;
+    padding-bottom: 60px;
+  }
+}

@@ -1,4 +1,13 @@
+.nav__contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .nav__navbar {
+  width: 80%;
+  margin: 0 auto;
   background-color: $clr-claros-1;
   overflow: hidden;
   font-family: $fnt-princi;

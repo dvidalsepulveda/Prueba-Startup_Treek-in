@@ -1,15 +1,17 @@
 .caracteristicas {
   margin: 0 auto;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 50px;
 
   h2 {
     text-align: center;
     color: $clr-negros-1;
     font-family: $fnt-princi;
+    font-size: $xxx-large;
+    font-weight: $bold;
     padding: 1rem;
   }
   img {
@@ -17,13 +19,13 @@
     height: auto;
     padding: 1rem;
   }
-  h3{
+  h3 {
     text-align: center;
     color: $clr-negros-1;
     font-family: $fnt-princi;
     padding: 1rem;
   }
-  p{
+  p {
     width: 270px;
     line-height: 2rem;
     color: $clr-negros-1;
@@ -32,28 +34,41 @@
   }
 }
 
-.precios {
-  margin: 0 auto;
-  background-image: url(../img/bg-price.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 800px;
-  h2 {
-    text-align: center;
-    color: $clr-claros-1;
-    font-family: $fnt-princi;
-    padding: 1rem;
-  }
-
-  .precios__caja {
-    display: flex;
-    flex-wrap: wrap;
-    .card {
-      width: 500px;
-      height: 200px;
-      margin: 1rem auto;
-      background-color: white;
+@media (min-width: 576px) {
+  .caracteristicas {
+    .caracteristicas__contenedor {
+      display: flex;
+      justify-content: space-between;
+      .caracteristicas__items {
+        padding-left: 2rem;
+        h3 {
+          text-align: left;
+          padding: 1rem 1rem 0.5rem 1rem;
+        }
+        p {
+          width: 500px;
+          padding: 0 1rem 1rem 1rem;
+        }
+      }
     }
   }
 }
+
+// animacion grafico
+
+.animation-element{
+  opacity: 0;
+  position: relative;
+  transition: all 500ms linear;
+  transform: translate3d(0px, 10px, 0px);
+  transition-delay: 1s;
+}
+
+.animation-element.in-view{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/*animation fade in */
+
+

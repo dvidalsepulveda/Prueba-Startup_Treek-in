@@ -19,16 +19,23 @@
     <title>Startup Treek-in</title>
   </head>
   <body>
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <nav class="nav__navbar" id="navbar">
-      <a href="#"><img src="assets/img/Logo.svg" alt=""/></a>
-      <a href="#">Acerca de</a>
-      <a href="#">Caracteristicas</a>
-      <a href="#">Precios</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars fa-2x"></i>
-      </a>
-    </nav>
+    <div class="nav__contenedor">
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <nav class="nav__navbar" id="navbar">
+        <a href="#"><img src="assets/img/Logo.svg" alt=""/></a>
+        <a href="#">Acerca de</a>
+        <a href="#">Caracteristicas</a>
+        <a href="#">Precios</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars fa-2x"></i>
+        </a>
+      </nav>
+
+      <div class="nav__botones">
+        <button class="nav__botones-base iniciar">Iniciar Sesión</button>
+        <button class="nav__botones-base">Regístrate</button>
+      </div>
+    </div>
 
     <header>
       <div class="heroSection">
@@ -49,20 +56,56 @@
 
     <main class="caracteristicas">
       <h2>Caracteristicas</h2>
-      <img src="assets/img/bar-graph.svg" alt="" />
-      <h3>Estadisticas de tu progreso</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum similique
-        autem ex beatae laboriosam inventore sint saepe dolorum minus quos
-        deleniti, nihil reprehenderit enim id nulla dolor nemo magni architecto?
-      </p>
+      <div class="caracteristicas__contenedor">
+        <div
+          class="caracteristicas__img animation-element slide-left testimonial"
+        >
+          <img src="assets/img/bar-graph.svg" alt="" />
+        </div>
+        <div class="caracteristicas__items">
+          <h3>Estadisticas de tu progreso</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            similique autem ex beatae laboriosam inventore sint saepe dolorum
+            minus quos deleniti, nihil reprehenderit enim id nulla dolor nemo
+            magni architecto?
+          </p>
+        </div>
+      </div>
     </main>
 
     <section class="precios">
       <h2>Precios</h2>
       <div class="contenedor precios__caja row">
-        <div class="col-sm-12 col-md-6 card"></div>
-        <div class="col-sm-12 col-md-6 card"></div>
+        <div class="col-sm-12 col-md-6 card">
+          <h3>Trekk-in Free</h3>
+          <p>$ 0 / mes</p>
+          <hr />
+          <ul>
+            <li>Ver mapas creado por usuarios</li>
+            <li>Concetar con otros usuarios</li>
+            <li class="precios__oculto"></li>
+            <li class="precios__oculto"></li>
+            <li class="precios__oculto"></li>
+          </ul>
+          <hr />
+          <button class="precios__boton">Obtén Free</button>
+        </div>
+
+        <div class="col-sm-12 col-md-6 card">
+          <h3>Trekk-in Premium</h3>
+          <p>$ 3500 / mes</p>
+          <hr />
+          <ul>
+            <li>Ver mapas creado por usuarios</li>
+            <li>Concetar con otros usuarios</li>
+            <li>Definir mejores rutas</li>
+            <li>Mapas Offline</li>
+            <li>Integración con otras aplicaciones</li>
+          </ul>
+          <hr />
+          <button class="precios__boton">Obtén Free</button>
+        </div>
       </div>
     </section>
 
@@ -72,8 +115,18 @@
         <li><span></span>Cookies</li>
         <li><span></span>Sobre anuncios</li>
       </ul>
-      <p>2018 Trekk-in SPA.</p>
+      <p>© 2018 Trekk-in SPA.</p>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/animate.js"></script>
+
   </body>
+
   <script src="assets/js/script.js"></script>
+  
 </html>

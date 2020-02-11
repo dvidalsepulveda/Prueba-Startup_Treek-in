@@ -17,19 +17,23 @@
     .heroSection__titulo {
       h1 {
         padding: 1rem 0;
-        
+        font-size: $xxx-large;
+        font-weight: $bold;
       }
     }
-
-    .heroSection__texto{
-        line-height: 2rem;
+    .heroSection__texto {
+      line-height: 2rem;
     }
   }
 }
 
 @media (min-width: 576px) {
-    .heroSection {
-        background-position: center;
-        background-size: cover;
+  .heroSection {
+    background-position: center;
+    background-size: cover;
+    .heroSection__elements{
+      width: 400px;
+      margin-left: 100px;;
     }
   }
+}

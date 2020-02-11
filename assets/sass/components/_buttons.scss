@@ -1,0 +1,33 @@
+.nav__botones {
+  display: none;
+}
+
+
+.precios {
+  .precios__caja {
+    .card {
+      .precios__boton {
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        color: $clr-claros-1;
+        background-color: $clr-princ-1;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+    .nav__botones {
+        display: flex;
+      }
+      
+      .nav__botones-base {
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+        color: $clr-claros-1;
+        background-color: $clr-princ-1;
+        display: inline;
+      }
+}
